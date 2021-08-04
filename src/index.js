@@ -6,7 +6,13 @@ import ReactDOM from 'react-dom';
 
 // Create a react component
 const App = () => {
-    return <div>Heyyyya</div>
+    return (
+        <div>
+            <label class="label" for="name">Enter Stuff Here</label>
+            <input id="name" type="text"/>
+            <button style="background-color: blue; color: white;">Send</button>
+        </div> 
+    );
 };
 
 // Take the react component and show it on the screen
