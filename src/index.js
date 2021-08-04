@@ -4,18 +4,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-function getButtonText() {
-    return 'Click on Me!';
-}
-
 // Create a react component
 const App = () => {
+    const buttonText = { text: 'Click Me'};
+
     return (
         <div>
             <label className="label" for="name">Enter Stuff Here</label>
             <input id="name" type="text"/>
             <button style={{ backgroundColor: 'blue', color: 'white' }}>
-                {getButtonText()}
+                {buttonText}
+                {/* if you try to use an empty javascript object, you'll get the following error: "Objects are not valid as a React Child" */}
             </button>
         </div> 
     );
